@@ -1,0 +1,61 @@
+# depslib dependency file v1.0
+1411169268 source:/home/sleeepwalker/Projects/Compilador/auto_char.c
+	"scanner.h"
+
+1411960229 /home/sleeepwalker/Projects/Compilador/scanner.h
+	<stdio.h>
+	<ctype.h>
+	<stdlib.h>
+	<string.h>
+
+1411169248 source:/home/sleeepwalker/Projects/Compilador/auto_ident_pChave.c
+	"scanner.h"
+
+1411168038 source:/home/sleeepwalker/Projects/Compilador/auto_int_float.c
+	"scanner.h"
+
+1411170244 source:/home/sleeepwalker/Projects/Compilador/auto_symbol_coment.c
+	"scanner.h"
+
+1411950410 source:/home/sleeepwalker/Projects/Compilador/compilador.c
+	"parser.h"
+
+1411954168 /home/sleeepwalker/Projects/Compilador/parser.h
+	"scanner.h"
+
+1411946323 source:/home/sleeepwalker/Projects/Compilador/scanner.c
+	"scanner.h"
+
+1411962043 source:/home/sleeepwalker/Projects/Compilador/parser.c
+	"parser.h"
+
+1411169268 source:/home/sleepwalker/Projects/Compilador/auto_char.c
+	"scanner.h"
+
+1411960228 /home/sleepwalker/Projects/Compilador/scanner.h
+	<stdio.h>
+	<ctype.h>
+	<stdlib.h>
+	<string.h>
+
+1411169248 source:/home/sleepwalker/Projects/Compilador/auto_ident_pChave.c
+	"scanner.h"
+
+1411168038 source:/home/sleepwalker/Projects/Compilador/auto_int_float.c
+	"scanner.h"
+
+1411170244 source:/home/sleepwalker/Projects/Compilador/auto_symbol_coment.c
+	"scanner.h"
+
+1412006926 source:/home/sleepwalker/Projects/Compilador/compilador.c
+	"parser.h"
+
+1412017842 /home/sleepwalker/Projects/Compilador/parser.h
+	"scanner.h"
+
+1411946322 source:/home/sleepwalker/Projects/Compilador/scanner.c
+	"scanner.h"
+
+1412019652 source:/home/sleepwalker/Projects/Compilador/parser.c
+	"parser.h"
+

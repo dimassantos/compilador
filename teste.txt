@@ -1,0 +1,19 @@
+int main ( ){
+    float y, x, y;
+    char t, b;
+    char teste ;
+    int a, b, c;
+    float e, f, g;
+    char h, i, j;
+    int j;
+    j = (x + 2 + ((4+0.5))) * (2.6*.2);
+  {
+    {
+       int x;
+       x = 2 * 4 * 2;
+       while(2 == 2){
+          x = 2;
+       }
+    }
+  }
+}
