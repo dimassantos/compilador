@@ -14,7 +14,7 @@ void help(void)
     printf("\nUtilizaca: \n    compilador <fileName>");
     printf("\n    compilador [opcao]");
     printf("\nOpcoes:");
-    printf("\n    -h Exibe o esta ajuda");
+    printf("\n    -h Exibe esta ajuda");
     printf("\n    -a Exibe informacoes sobre esse compilador.\n\n");
 }
 
@@ -24,7 +24,7 @@ int main(int argc, char *argv[])
 
     if(argc != 2)
     {
-        printf("\ncompilador: utilizacao incorreta...");
+        printf("\ncompilador: utilizacao incorreta...\n");
         help();
     }
     else if(0 == strcmp(argv[1], "-h"))
