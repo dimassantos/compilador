@@ -1,60 +1,53 @@
 /*
  * compilador.c
  *
- * Copyright 2014 SleeepWalker <sleeepwalker@sleeepwalker-OptiPlex-990>
- *
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation; either version 2 of the License, or
- * (at your option) any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston,
- * MA 02110-1301, USA.
- *
+ * Copyright 2014 Dimas Santos
  *
  */
 
 
 #include "parser.h"
 
-int main(int argc, char *argv[])
+void help(void)
 {
-    FILE *arquivo = NULL;
-
-    arquivo = fopen("teste.txt", "r");
-    if(arquivo==NULL)
-    {
-        printf("Nao foi possivel abrir o arquivo\n");
-        return 0;
-    }
-    parser(arquivo);
-    return (0);
+    printf("\nAjuda: <compilador v1.0 - 09/2014>");
+    printf("\nUtilizaca: \n    compilador <fileName>");
+    printf("\n    compilador [opcao]");
+    printf("\nOpcoes:");
+    printf("\n    -h Exibe o esta ajuda");
+    printf("\n    -a Exibe informacoes sobre esse compilador.\n\n");
 }
 
-
-/*
 int main(int argc, char *argv[])
 {
     FILE *arquivo = NULL;
-    TOKEN scanRetorno;
 
-    arquivo = fopen("teste.txt", "r");
-    if(arquivo==NULL)
+    if(argc != 2)
     {
-        printf("Nao foi possivel abrir o arquivo\n");
-        return 0;
+        printf("\ncompilador: utilizacao incorreta...");
+        help();
+    }
+    else if(0 == strcmp(argv[1], "-h"))
+    {
+        help();
+    }
+    else if(0 == strcmp(argv[1], "-a"))
+    {
+        printf("\nAluno: Dimas Santos \nPeriodo: 5\nUNICAP - 2014\n");
+    }
+    else
+    {
+        arquivo = fopen(argv[1], "r");
+        printf("FILENAME: %s", argv[1]);
+        if(arquivo==NULL)
+        {
+            printf("\ncompilador: Nao foi possivel abrir o arquivo,"
+               "verifique o nome e se estah em local acessivel para leitura.\n");
+            return 0;
+        }
+        parser(arquivo);
+        printf("\nCompilado com sucesso!\n");
     }
 
-    while(scanner(arquivo, &scanRetorno))
-        printf("Lexema: %s\t\tClassificacao: %d\n", scanRetorno.lexema, scanRetorno.classificacao);
-
-    return 0;
-}*/
-
+    return (0);
+}
